@@ -50,6 +50,25 @@ public class Text {
 		System.out.println(a6);
 		System.out.println(a7);
 		
+		// StringBuider para string mutaveis
+//		StringBuilder sb = new StringBuilder(); // inicializar vazio
+//		StringBuilder sb = new StringBuilder("Text"); // inicializar com um texto;
+//		StringBuilder sb = new StringBuilder(100); incializar com uma capacidade, porem essa capacidade er ajustada automaticamente
+		
+		StringBuilder sb = new StringBuilder("Hey");
+		sb.append(" dude");
+		System.out.println(sb);
+		sb.insert(3, ",");
+		System.out.println(sb);
+		sb.append("!!!!!!!");
+		System.out.println(sb);
+		sb.delete(9, 13);
+		System.out.println(sb);
+		sb.reverse();
+		System.out.println(sb);
+		int capacity = sb.capacity();
+		System.out.println("capacity: " + capacity + "    Length: " + sb.length());
+		
 	}
 
 }
